@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            /* background-color: background: linear-gradiebackground: linear-gradient(to right, #0f2027, #203a43, #2c5364);nt(to right, #0f2027, #203a43, #2c5364);; */
+            /* background: linear-gradient(to right, #4f0036, rgb(35, 0, 54), #000000); */
+            color: white;
+            background: linear-gradient(to right, #4f0036, rgb(35, 0, 54), #003e40);
+            font-family: "Raleway", sans-serif;
+            height: 100%;
+            overflow: hidden;
+
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(137, 7, 185);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 20px 25px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav a:hover {
+
+            color: rgb(247, 148, 239);
+            font-size: 1.05rem;
+
+        }
+
+        .left {
+            font-size: 50px;
+            /* font-size: x-large; */
+            font-weight: 600;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px;
+        }
+
+
+        .contact {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+        }
+
+        h2 {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 10px;
+            color: white;
+            font-size: 60px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: transparent;
+            letter-spacing: 4px;
+            background-color: rgb(69, 0, 133);
+            position: relative;
+            background: linear-gradient(to bottom right, rgb(77, 231, 255), rgb(255, 0, 251));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+
+
+        }
+
+        .contact form {
+            width: 600px;
+            text-align: center;
+            height: 600px;
+            transition: 4s;
+        }
+
+        form .inputbox {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .field .item {
+            width: 100%;
+            padding: 18px;
+            background: transparent;
+            border: 2px solid rgb(181, 110, 225);
+            outline: none;
+            border-radius: 6px;
+            font-size: 16px;
+            color: white;
+            margin: 12px 0;
+        }
+        .field .error .item{
+            border-color: #ff3860;
+            
+
+        }
+
+
+        .field .item::placeholder {
+            color: rgb(68, 10, 106);
+        }
+
+        .inputfield input:focus {
+            outline: 0;
+        }
+
+        .inputfield.success input {
+            border-color: #09c372;
+        }
+
+        .inputfield.error input {
+            border-color: #ff3860;
+        }
+
+        .inputfield .error {
+            color: #ff3860;
+            font-size: 9px;
+            height: 13px;
+        }
+
+        form button {
+            padding: 12px 32px;
+            background-color: blueviolet;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+            box-shadow: 0 0 10px blueviolet;
+            font-size: 16px;
+            color: rgb(40, 0, 43);
+            letter-spacing: 1px;
+            font-weight: 400;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 2s;
+        }
+
+        form button:hover {
+            box-shadow: none;
+
+        }
+
+        .field .error-txt {
+            font-size: 14.5px;
+            color: rgb(201, 9, 9);
+            text-align: left;
+            margin: -5px 0 10px;
+            display: none;
+        }
+        .error .error-txt {
+            display: block;
+        }
+
+
+        .field.error .item{
+            border-color: #ff3860;
+
+        }
+
+        .form .textareafield .item {
+            resize: none;
+        }
+
+        form .textareafield .error-txt {
+            margin-top: -10px;
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Nilarnab.
+                    </Nilarnab>
+            </div>
+            <div class="right">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a href="AboutMe.html">
+                        <li>About Me</li>
+                    </a>
+                    <a href="ContactMe.html">
+                        <li>Contact Me</li>
+                    </a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <h2>Contact Me:</h2>
+    <section class="contact">
+        <form action="#" id="form">
+            <div class="inputbox">
+                <div class="inputfield field ">
+                    <input type="text" placeholder="Enter your name" id="name" class="item" autocomplete="off">
+                    <div class="error-txt">Name can't be blank</div>
+                </div>
+                <div class="inputfield field  ">
+                    <input type="email" placeholder="Enter your email" id="email" class="item" autocomplete="off">
+                    <div class="error-txt">Email can't be blank</div>
+                </div>
+            </div>
+            <div class="inputbox">
+                <div class="inputfield field ">
+                    <input type="text" placeholder="Enter your phone number" id="phone" class="item" autocomplete="off">
+                    <div class="error-txt">Phone can't be blank</div>
+                </div>
+                <div class="inputfield field ">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
+            </div>
+            <div class="textareafield field ">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Give me your message" id="message"
+                    class="item" autocomplete="off"></textarea>
+                    <div class="error-txt">Message can't be blank</div>
+
+            </div>
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </section>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="contactscript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        // const form = document.getElementById('form')
+        // const name = document.getElementById('name')
+        // const email = document.getElementById('email')
+        // const phone = document.getElementById('phone')
+        // const subject = document.getElementById('subject')
+        // const message = document.getElementById('message')
+
+        // form.addEventListener('submit', e => {
+        //     e.preventDefault()
+        //     validateInputs()
+
+        // }
+        // )
+        // const setError = (ele, mes) => {
+        //     const inputControl = ele.parentElement;
+        //     const errorDisplay = inputControl.querySelector('.error')
+
+        //     errorDisplay.innerText = mes
+        //     inputControl.classList.add('success');
+        //     inputControl.classList.remove('error');
+        // }
+        // const setSuccess = element => {
+        //     const inputControl = element.parentElement;
+        //     const errorDisplay = inputControl.querySelector('.error');
+
+        //     errorDisplay.innerText = '';
+        //     inputControl.classList.add('success');
+        //     inputControl.classList.remove('error');
+        // };
+        // const isValidEmail = email => {
+        //     const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        //     return re.test(String(email).toLowerCase());
+        // }
+        // const validateInputs = () => {
+        //     const nameValue = name.value.trim()
+        //     const emailValue = email.value.trim()
+        //     const phone = phone.value.trim()
+        //     const subject = subject.value.trim()
+        //     const message = message.value.trim()
+
+        //     if (nameValue === '') {
+        //         setError(name, 'Name is required')
+        //     } else {
+        //         setSuccess(name);
+        //     }
+        //     if (emailValue === '') {
+        //         setError(email, 'Email is required');
+        //     } else if (!isValidEmail(emailValue)) {
+        //         setError(email, 'Provide a valid email address');
+        //     } else {
+        //         setSuccess(email);
+        //     }}
+
+
+
+        
+
+
+
+
+
+
+
+
+    
+</body>
+
+</html>

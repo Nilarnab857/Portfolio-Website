@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nilarnab Sutradhar</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            /* background-color: rgb(35, 0, 54); */
+            background: linear-gradient(to right, #4f0036, rgb(35, 0, 54), #003e40);
+            color: white;
+            font-family: "Raleway",sans-serif;
+
+        }
+
+        nav{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(137, 7, 185);
+
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+            list-style:none;
+            margin:20px 25px;
+
+        }
+
+        nav a{
+            text-decoration: none;
+            color: white;
+
+        }
+        nav a:hover{
+            
+            color: rgb(247, 148, 239);
+            font-size: 1.05rem;
+
+        }
+
+        .left{
+            font-size:50px;
+            /* font-size: x-large; */
+            font-weight:600;
+        }
+        .first{
+            display: flex;
+            justify-content: space-around;
+            margin: 23px;
+        }
+        .firstleft{
+            margin: 100px;
+            height: 200px;
+            width: 40vw;
+            font-size: 3rem;
+
+        }
+        .firstright
+        {
+           
+            height: 200px;
+            width: 30vw;
+
+        }
+        .firstright img
+        {
+            width:400px;
+            margin: 50px;
+            animation: floatimage 4s ease-in-out infinite;
+
+        }
+        .blue{
+            color: rgb(235, 162, 255);
+        }
+        #element{
+        color:rgb(235, 162, 255);
+        }
+
+        @keyframes floatimage{
+            0%{
+                transform:translateY(0);
+
+            }
+            50%{
+                transform:translateY(-2.4rem);
+
+            }
+            100%{
+                transform:translateY(0);
+
+            }
+        }
+        
+
+        /* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900 */
+
+        /* .raleway-<uniquifier> {
+            font-family: "Raleway", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: <weight>;
+            font-style: normal;
+        } */
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Nilarnab.</div>
+            <div class="right">
+                <ul>
+                   <a href=""> <li>Home</li></a>
+                   <a href="projects.html"> <li>Projects</li></a>
+                   <a href="AboutMe.html"> <li>About Me</li></a>
+                   <a href="ContactMe.html"> <li>Contact Me</li></a>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class ="first">
+            <div class="firstleft">
+                Hello There!!
+                <div>I am <span class="blue">Nilarnab</span> </div>
+                <div>An Undergraduate student at IIT Guwahati</div>
+                <span id="element"></span>
+            
+            </div>
+            <div class="firstright">
+                <img src="websiteimg.png" alt="">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['HTML/CSS', 'JavaScript','Machine Learning','Computer Vision','C++'],
+      typeSpeed: 50,
+    });
+  </script>
+</body>
+
+</html>

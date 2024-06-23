@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* background-color: rgb(35, 0, 54); */
+            background: linear-gradient(to right, #4f0036, rgb(35, 0, 54), #003e40);
+            color: white;
+            font-family: "Raleway", sans-;
+
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(137, 7, 185);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 20px 25px;
+
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        nav a:hover {
+
+            color: rgb(247, 148, 239);
+            font-size: 1.05rem;
+
+        }
+
+        .left {
+            font-size: 50px;
+            /* font-size: x-large; */
+            font-weight: 600;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            margin: 23px;
+        }
+
+
+        .container {
+            box-sizing: border-box;
+            min-height: 100vh;
+            width: 100%;
+
+        }
+
+        .project-wrapper {
+            padding: 5% 8%;
+        }
+
+        .project {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 100px;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: transparent;
+            letter-spacing: 4px;
+            background-color: rgb(69, 0, 133);
+            position: relative;
+            background: linear-gradient(to bottom right, rgb(77, 231, 255), rgb(255, 0, 251));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+
+
+
+        }
+
+
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 80px;
+        }
+
+        .card {
+            height: 330px;
+            width: 370px;
+            background-color: rgba(38, 1, 62, 0.749);
+            padding: 3% 8%;
+            border: 0.2px solid rgb(255, 174, 235);
+            border-radius: 8px;
+            transition: .6s;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:after {
+            content: "";
+            position: absolute;
+            top: 150%;
+            left: -200px;
+            width: 120%;
+            transform: rotate(50deg);
+            background-color: white;
+            height: 18px;
+            filter: blur(30px);
+            opacity: 0.5;
+            transition: 1s;
+        }
+
+        .card:hover:after {
+            width: 225%;
+            top: -100%;
+
+        }
+
+        .card i {
+            color: rgb(255, 174, 235);
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 4.8rem;
+        }
+
+        .card h2 {
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+
+
+        }
+
+        .card p {
+            text-align: center;
+            width: 100%;
+            margin: 12px 0;
+            color: rgba(218, 164, 254, 0.749);
+
+        }
+
+        .card:hover {
+            background-color: transparent;
+            transform: translateY(-20px);
+            border-color: rgb(7, 245, 225);
+
+
+        }
+
+        .card:hover i {
+            color: rgb(7, 245, 225);
+        }
+
+        @media screen and (max-width:1200px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width:900px) {
+            .cards {
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Nilarnab.
+                   
+            </div>
+            <div class="right">
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="projects.html">
+                        <li>Projects</li>
+                    </a>
+                    <a href="AboutMe.html">
+                        <li>About Me</li>
+                    </a>
+                    <a href="ContactMe.html">
+                        <li>Contact Me</li>
+                    </a>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="project-wrapper">
+            <div class="project">
+                <h1>My Projects</h1>
+                <div class="cards">
+
+                    <div class="card">
+                        <i class="fa-robot fa-solid"></i>
+                        <h2>YUVAAN ROVER</h2>
+                        <p>worked in the vision team for YUVAAN IROC rover this year and applied OpenCV and other python libraries
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Face Detector</h2>
+                        <p>Face Detection using front camera implementing  Python and OpenCV.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-js"></i>
+                        <h2>Gym Website</h2>
+                        <p>Created a personalised Gym website for a local gym using HTML CSS and JS
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-chromecast"></i>
+                        <h2>More...</h2>
+                        <p>More to come
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-chromecast"></i>
+                        <h2>More...</h2>
+                        <p>More to come
+                        </p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-chromecast"></i>
+                        <h2>More...</h2>
+                        <p>More to come
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
